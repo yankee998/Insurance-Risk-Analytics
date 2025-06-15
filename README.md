@@ -68,7 +68,7 @@ Run EDA scripts from src/scripts/:python src/scripts/eda_analysis.py
 Explore visualizations in C:\Users\Skyline\Insurance Risk Analytics\visualization.
 
 Directory Structure
-Insurance-Risk-Analytics/
+`Insurance-Risk-Analytics/
 ├── data/                  # Data files (e.g., insurance_data.parquet)
 ├── src/                   # Source code
 │   └── scripts/           # Python scripts for EDA
@@ -79,7 +79,7 @@ Insurance-Risk-Analytics/
 ├── requirements.txt       # Python dependencies
 ├── interim_report.md      # Project progress report
 ├── README.md              # This file
-└── LICENSE                # Project license
+└── LICENSE                # Project license`
 
 
 # Contributing
