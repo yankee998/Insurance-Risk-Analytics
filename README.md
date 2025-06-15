@@ -36,8 +36,8 @@ VSCode: With PowerShell terminal recommended.
 
 Installation
 
-Clone the repository:git clone https://github.com/yankee998/Insurance-Risk-Analytics.git
-cd Insurance-Risk-Analytics
+` Clone the repository:git clone https://github.com/yankee998/Insurance-Risk-Analytics.git
+cd Insurance-Risk-Analytics `
 
 
 Create and activate a virtual environment:
