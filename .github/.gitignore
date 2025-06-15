@@ -4,3 +4,4 @@ __pycache__
 *.env
 *.log
 MachineLearningRating_v3.txt
+venv/
