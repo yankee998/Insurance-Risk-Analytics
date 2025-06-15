@@ -42,22 +42,22 @@ cd Insurance-Risk-Analytics ``
 
 Create and activate a virtual environment:
 
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+` python -m venv venv
+.\venv\Scripts\Activate.ps1 `
 
 
 Install dependencies:
 
-pip install --upgrade pip
-pip install -r requirements.txt
+`pip install --upgrade pip
+pip install -r requirements.txt `
 
 
 Initialize DVC and set up remote storage:
 
-dvc init
+`dvc init
 mkdir C:\DVC_Storage
 dvc remote add -d localstorage C:/DVC_Storage
-dvc pull
+dvc pull`
 
 
 Usage
