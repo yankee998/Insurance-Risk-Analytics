@@ -5,3 +5,5 @@ __pycache__
 *.log
 MachineLearningRating_v3.txt
 venv/
+plots/
+/plots
