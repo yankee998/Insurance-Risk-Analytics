@@ -24,13 +24,23 @@ columns_to_drop = missing_summary[missing_summary > threshold].index
 data = data.drop(columns=columns_to_drop)
 print(f"Dropped columns with >90% missing: {list(columns_to_drop)}")
 
+# Handle datetime columns
+datetime_cols = data.select_dtypes(include=['datetime64']).columns
+for col in datetime_cols:
+    if col == 'VehicleIntroDate':
+        data['VehicleIntroYear'] = data[col].dt.year.fillna(0).astype(int)
+        data = data.drop(columns=[col])
+    else:
+        data = data.drop(columns=[col])
+print(f"Processed datetime columns: {list(datetime_cols)}")
+
 # Impute numerical columns with median
 numerical_cols = data.select_dtypes(include=['int64', 'float64']).columns
 for col in numerical_cols:
-    if data[col].notnull().sum() > 0:  # Only impute if non-null values exist
+    if data[col].notnull().sum() > 0:
         data[col] = data[col].fillna(data[col].median())
     else:
-        data[col] = data[col].fillna(0)  # Fallback to 0 if all values are missing
+        data[col] = data[col].fillna(0)
 
 # Impute categorical columns with mode
 categorical_cols = data.select_dtypes(include=['object']).columns
