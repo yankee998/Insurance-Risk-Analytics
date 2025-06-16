@@ -1,0 +1,11 @@
+,Feature,Mean_SHAP
+38,ExcessSelected,1.446154
+39,CoverCategory,1.2603736
+36,SumInsured,0.520084
+41,CoverGroup,0.45481294
+0,UnderwrittenCoverID,0.22886914
+1,PolicyID,0.19551213
+13,PostalCode,0.17320915
+19,RegistrationYear,0.1375531
+31,CapitalOutstanding,0.10370894
+15,SubCrestaZone,0.10008144
